@@ -17,8 +17,7 @@ function App() {
     <Card/>
     <Card/>
     <Card/>
-    <Card/>
-    <Card/>
+   
     </div>
     <h1 className='hhh'>О Нас</h1>
     <AboutUs/>
