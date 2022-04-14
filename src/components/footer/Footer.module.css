@@ -1,0 +1,12 @@
+.socialMedia>img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+.footer{
+    text-align: center;
+    background-color:cornflowerblue ;
+    margin-top: 10px;
+    padding: 20px;
+}

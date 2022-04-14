@@ -1,0 +1,15 @@
+.header{
+    background-color: cornflowerblue;
+}
+.header_position{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btns>a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 550;
+}
