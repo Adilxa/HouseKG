@@ -1,0 +1,57 @@
+.center{
+    text-align: center;
+}
+.name>input{
+    width:45%;
+    height:25px;
+}
+.description>input{
+    width: 45%;
+    height:55px;
+}
+.description>p{
+    color: grey;
+    font-size: small;
+}
+
+.price>input{
+    width: 45%;
+    height:25px;
+}
+.price>p{
+    color: gray;
+    font-size: small;
+}
+.count{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.btns{
+    display: flex;
+    width: 45%;
+    justify-content: end;
+    align-items: center;
+    margin-top: 30px;
+}
+.btns>a{
+    text-decoration: none;
+    color: black;
+}
+.btns>a:nth-child(2){
+    margin-left: 40px;
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.name{
+    padding: 20px 0px;
+}
+.description{
+    padding: 20px 0px;
+}
+.price{
+    padding: 20px 0px;
+}

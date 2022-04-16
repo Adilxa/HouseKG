@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    margin-top: 70px;
+}
+.img{
+    width: 50%;
+}
+.description{
+    width: 50%;
+}
+.description>h1{
+    padding-bottom: 20px;
+}
+.img>img{
+    width: 500px;
+    border-radius: 10px;
+}
+.btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.btn>a{
+    padding: 8px;
+    border: 1px solid cornflowerblue;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+}

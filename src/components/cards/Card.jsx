@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import css from './Card.module.css'
 class Card extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class Card extends React.Component {
                 <div className={css.description}>
                     <h4>Продаю Дом в Бишкеке</h4>
                     <h4>55000$</h4>
-                    <a href="">Подробнее</a>
+                    <Link to={'/card/' + this.props.id}>Подробнее</Link>
                 </div>
             </div>
         )

@@ -1,10 +1,7 @@
 import React from "react";
 import css from './AboutUs.module.css'
-class AboutUs extends React.Component{
-    constructor(){
-        super()
-    }
-    render(){
+const AboutUs = () => {
+
         return(
             <div className={css.desc}>
                 <div className={css.img_desc}>
@@ -17,7 +14,6 @@ class AboutUs extends React.Component{
                     </div>
                 </div>
             </div>
-        )
-    }
+        )    
 }
 export default AboutUs;
