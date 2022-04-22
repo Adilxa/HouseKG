@@ -1,22 +1,42 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import css from '../moreAbout/moreAbout.module.css'
-export default function moreAbout() {
+import { useEffect } from 'react';
+import { useState } from 'react';
+export default function MoreAbout() {
+  //here
+  const {id} = useParams();
+  const [house,setHouse] = useState(null)
+  useEffect(()=>{
+    fetch('https://625eaacd873d6798e2abb689.mockapi.io/house/'+id)
+    .then((res)=>res.json())
+    .then((data)=>{
+      setHouse(data)
+      console.log(data)
+    })
+  },[id]);
+  
+  //
+  if(house===null){
+    return <div className={css.gif}><img style={{width:'150px'}} src='https://cignal.tv/load/Content/loading.gif' alt='#' / ></div> 
+  }
   return (
     <div className="container">
+      
     <div className={css.wrapper}>
       <div className={css.img}>
-        <img src="https://www.thoughtco.com/thmb/aH8Dp8tXYaevj8LPZ0XxTMi2xQ4=/2124x1412/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1280744491-2fc441d7de104e90ad4ba9fcc876951a.jpg " alt="" />
+        <img src={house.image} alt="" />
       </div>
       <div className={css.description}>
-          <h1>Продаю Дом 5км в Нарыне</h1>
-          <h1>Цена 5000$</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae amet vel unde sunt omnis pariatur corporis dignissimos eius aut fugiat?</p>
+          <h1>{house.name}</h1>
+          <h1>{house.price}$</h1>
+          <p>{house.description}</p>
       </div>
-      
+     
     </div>
     <div className={css.btn}>
-    <Link to='/'>Позвонить</Link>
+    <Link to='/'>{house.phoneNumber}</Link>
     </div>
     </div>
   )

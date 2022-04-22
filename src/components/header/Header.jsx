@@ -13,7 +13,7 @@ export default function Header() {
                     </div>
                     <div className={css.btns}>
                         <Link to='/'>Главная</Link>
-                        <a href="">О нас</a>
+                        <Link to='/#aboutus'>О нас</Link>
                         <a href="">Контакты</a>
                         <Link to='/login'>Войти</Link>
                     </div>
