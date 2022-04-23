@@ -30,7 +30,7 @@
 .btns{
     display: flex;
     width: 45%;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
 }
