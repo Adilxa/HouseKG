@@ -14,7 +14,7 @@ export default function Header() {
                     <div className={css.btns}>
                         <Link to='/'>Главная</Link>
                         <Link to='/#aboutus'>О нас</Link>
-                        <a>Контакты</a>
+                        <Link to='/'>Контакты </Link>
                         <Link to='/login'>Войти</Link>
                     </div>
                 </div>
