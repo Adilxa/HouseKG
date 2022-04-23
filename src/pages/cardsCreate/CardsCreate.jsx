@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import css from '../cardsCreate/CardsCreate.module.css'
 export default function CardsCreate() {
+    const navigate = useNavigate();
     const [state, setState] = useState('')
     const [desc, setdescription] = useState('')
     const [price, setPrice] = useState('')
@@ -19,6 +20,12 @@ export default function CardsCreate() {
                 price:price
             }),
         })
+            .then((res)=>{
+                if(res.status===201){
+                    alert('Success')
+                    navigate('/')
+                }
+            })
         }
         
     
@@ -70,7 +77,7 @@ export default function CardsCreate() {
                 </div>
                 <div className={css.btns}>
                     <Link to='/'>Закрыть</Link>
-                    <button type='submit' className='btn'>Сохранить</button>
+                    <button type='submit' className={css.btn}>Сохранить</button>
                 </div>
             </form>
         </div>

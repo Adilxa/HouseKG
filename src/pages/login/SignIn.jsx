@@ -58,7 +58,7 @@ export default function Sign() {
             }
         <div className={css.btns}>    
             <Link to='/'>Закрыть</Link> 
-            <button>Войти</button>
+            <button className={css.btn}>Войти</button>
         
         </div>
         </div>

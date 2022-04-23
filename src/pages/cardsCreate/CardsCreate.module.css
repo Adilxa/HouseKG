@@ -55,3 +55,10 @@
 .price{
     padding: 20px 0px;
 }
+.btn{
+    color: black;
+    margin-left: 10px;
+    border: none;
+    background:none ;
+    font-size: 15px;
+}
