@@ -9,7 +9,7 @@ export default function Header() {
             <div className="container">
                 <div className={css.header_position}>
                     <div className="logo">
-                        <img style={{width:'80px'}} src="https://cdn-icons.flaticon.com/png/128/48/premium/48781.png?token=exp=1649879807~hmac=d0df3b01ebee4401a3432e54543bec90" alt="" />
+                        <img style={{width:'80px'}} src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/home-128.png" alt="" />
                     </div>
                     <div className={css.btns}>
                         <Link to='/'>Главная</Link>

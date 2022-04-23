@@ -9,9 +9,9 @@ export default function Footer() {
             You Are Welcome!</h3>
         </div>
         <div className={css.socialMedia}>
-            <img src="https://cdn-icons.flaticon.com/png/128/717/premium/717392.png?token=exp=1649936265~hmac=b3bca96fc86a020dea3707c19868df62" alt="" />
-            <img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536705.png?token=exp=1649936365~hmac=18eaaeeddcd3843d980f96cb3d3015f2" alt="" />
-            <img src="https://cdn-icons-png.flaticon.com/128/2165/2165061.png" alt="" />
+            <img src="https://cdn2.iconfinder.com/data/icons/free-social-media-16/24/Telegram-128.png" alt="" />
+            <img src="https://cdn4.iconfinder.com/data/icons/socialcones/508/Instagram-128.png" alt="" />
+            <img src="https://cdn1.iconfinder.com/data/icons/100-basic-for-user-interface/32/37-mail-128.png" alt="" />
         </div>
         <h6>©CopyRight</h6>
     </footer>
